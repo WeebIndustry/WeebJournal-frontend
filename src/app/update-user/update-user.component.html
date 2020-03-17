@@ -1,0 +1,26 @@
+<h3>Update Employee</h3>
+<div [hidden]="submitted" style="width: 400px">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" required [(ngModel)]="user.username">
+    </div>
+    <div class="form-group">
+
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="user.email">
+    </div>
+    <div class="form-group">
+
+      <label for="biography">Biography</label>
+      <input type="text" class="form-control" id="biography" required [(ngModel)]="user.biography">
+    </div>
+
+    <div class="form-group">
+      <label for="displayname">Display name</label>
+      <input type="text" class="form-control" id="displayname" required [(ngModel)]="user.displayname">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
