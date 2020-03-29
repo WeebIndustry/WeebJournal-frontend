@@ -8,7 +8,7 @@ This project is powered by NextJS. Made by Wello, a partner with WeebIndustry Te
 
 ###### 1. Setting up deploy environment
 
-You'll need git, NodeJS (latest LTS version), yarn installed. You should use UNIX styled shells for working, e.g. bash/zsh from Linux/MacOS/BSD/WSL on Windows, msys, cygwin, etc. for the hassle-less deployment. Windows is a little bit more inconvenient when setting up, so install it by yourself.
+You'll need git, NodeJS (latest LTS version), yarn installed. You should use UNIX styled shells for working, e.g. bash/zsh from Linux/MacOS/BSD/WSL on Windows, msys, cygwin, etc. for the hassle-less deployment experience. Windows is a little bit more inconvenient when setting up, so install it by yourself.
 
 Setting up NodeJS for: 
 
