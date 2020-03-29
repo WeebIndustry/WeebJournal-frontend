@@ -1,30 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Rebuck Core Project
 
-## Getting Started
+## a beta phase project of WeebJournal's front-end
 
-First, run the development server:
+This project is powered by NextJS. Made by Wello, a partner with WeebIndustry Team.
+
+#### Getting Started
+
+###### 1. Setting up deploy environment
+
+You'll need git, NodeJS (latest LTS version), yarn installed. You should use UNIX styled shells for working, e.g. bash/zsh from Linux/MacOS/BSD/WSL on Windows, msys, cygwin, etc. for the best deploent. Windows is a little bit more inconvenient when setting up, so install it by yourself.
+
+Setting up NodeJS for: 
+
+* Ubuntu (also works on WSL): `sudo apt install curl -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`. Do not use NodeJS version from Ubuntu.
+
+* Fedora/RHEL/CentOS: `sudo dnf install -y gcc-c++ make && curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -`
+
+* MacOS (with brew): `brew install node`
+
+* openSUSE Tumbleweed: `sudo zypper -vv in nodejs`
+
+and yarn:
+
+* For most of Linux distro and MacOS: [check yarn's installation instruction](https://classic.yarnpkg.com/en/docs/install).
+
+* openSUSE Tumbleweed: `sudo zypper -vv ar https://dl.yarnpkg.com/rpm/yarn.repo && sudo zypper -vv in yarn` (hit `a` for always trust yarn's rpm repo when adding to zypper's repos list)
+
+Set up the project:
+
+* Clone this repo:  `git clone https://github.com/WeebIndustry/WeebJournal-frontend.git`
+
+* Then jump inside: `cd WeebJournal-frontend`
+
+* Switch to `rebuck-core` branch: `git checkout rebuck-core`
+
+* Initialize the project: `yarn install`
+
+Run the development server:
 
 ```bash
-npm run dev
+npm run dev -p 6969
 # or
-yarn dev
+yarn dev -p 6969
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:6969](http://localhost:6969) with your browser to see the result. You can change the port if you want by change `6969` with your own port.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
