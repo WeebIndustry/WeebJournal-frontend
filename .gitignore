@@ -15,7 +15,7 @@ chrome-profiler-events.json
 speed-measure-plugin.json
 
 # nextjs deployment output
-.next
+/.next
 
 # IDEs and editors
 /.idea
