@@ -1,27 +1,49 @@
-# Weebjournal Frontend
+# Rebuck Core Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+## a beta phase project of WeebJournal's front-end
 
-## Development server
+This project is powered by NextJS. Made by Wello, a partner with WeebIndustry Team.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Getting Started
 
-## Code scaffolding
+###### 1. Setting up deploy environment
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You'll need git, NodeJS (latest LTS version), yarn installed. You should use UNIX styled shells for working, e.g. bash/zsh from Linux/MacOS/BSD/WSL on Windows, msys, cygwin, etc. for the hassle-less deployment experience. Windows is a little bit more inconvenient when setting up, so install it by yourself.
 
-## Build
+Setting up NodeJS for: 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Ubuntu (also works on WSL): `sudo apt install curl -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`. Do not use NodeJS version from Ubuntu.
 
-## Running unit tests
+* Fedora/RHEL/CentOS: `sudo dnf install -y gcc-c++ make && curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* MacOS (with brew): `brew install node`
 
-## Running end-to-end tests
+* openSUSE Tumbleweed: `sudo zypper -vv in nodejs`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+and yarn:
 
-## Further help
+* For most of Linux distro and MacOS: [check yarn's installation instruction](https://classic.yarnpkg.com/en/docs/install).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* openSUSE Tumbleweed: `sudo zypper -vv ar https://dl.yarnpkg.com/rpm/yarn.repo && sudo zypper -vv in yarn` (hit `a` for always trust yarn's rpm repo when adding to zypper's repos list)
+
+Set up the project:
+
+* Clone this repo:  `git clone https://github.com/WeebIndustry/WeebJournal-frontend.git`
+
+* Then jump inside: `cd WeebJournal-frontend`
+
+* Switch to `rebuck-core` branch: `git checkout rebuck-core`
+
+* Initialize the project: `yarn install`
+
+Run the development server:
+
+```bash
+npm run dev -p 6969
+# or
+yarn dev -p 6969
+```
+
+Open [http://localhost:6969](http://localhost:6969) with your browser to see the result. You can change the port if you want by change `6969` with your own port.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
