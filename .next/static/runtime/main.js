@@ -941,7 +941,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/home/wello/Projects/rebuck-core/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/home/wello6143/Projects/WeebJournal-frontend/.next");
       return error;
     }
   };
